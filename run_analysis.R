@@ -27,5 +27,5 @@ y<-rename(y, activity = 1)
 y$label<-factor(y$activity, labels = activity_labels$V2)
 #5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 td<-bind_cols(X, select(y,label), subjects)
-td_means <- summarize(group_by(td, label, subject), across(1:66, mean))
+td_means <- summarize(group_by(td, subject, label), across(1:66, mean))
 write.table(td_means, file = "tidy_dataset.txt", append=FALSE, row.names=FALSE)
