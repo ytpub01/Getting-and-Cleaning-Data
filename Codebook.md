@@ -28,7 +28,7 @@ The activity variable which ranges in value from 1 to 6 has been labelled with a
 
 ### The tidy dataset contains 180 rows that were grouped by activity performed and subject (person), 66 variable/feature columns, and a subject and activity column.
 
-Given the small number (6) of activities and the relatively large sixe of the measurements dataset (about 10,000), the activity column was transformed into a factor.
+Given the small number (6) of activities and the relatively large size of the measurements dataset (about 10,000), the activity column was transformed into a factor.
 
 The rows represent the average per group represented by an activity and a subject, with 68 columns (66 variable columns, a column for activity and a column for subject.
 
